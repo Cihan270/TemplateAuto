@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# door scripts/import-company.mjs gegenereerde config
+/src/config/garage.generated.ts
