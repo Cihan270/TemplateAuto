@@ -3,6 +3,7 @@ import { Instrument_Serif, Lexend } from "next/font/google";
 import { rootMetadata } from "@/lib/seo";
 import { localBusinessJsonLd } from "@/lib/structured-data";
 import { SiteShell } from "@/components/layout/site-shell";
+import { themeVariables } from "@/lib/theme";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="nl"
       className={`${instrument.variable} ${lexend.variable} h-full antialiased`}
+      style={themeVariables()}
     >
       <body className="flex min-h-full flex-col bg-paper font-sans text-ink">
         <script

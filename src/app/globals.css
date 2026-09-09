@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #231913;
-  --paper: #f5f3f1;
-  --surface: #ffffff;
-  --muted: #6b6560;
-  --line: #d2cdca;
-  --accent: #2f241e;
-  --accent-hover: #231913;
-  --success: #2f6b4f;
+  /*
+   * De kleuren (--ink, --paper, --surface, --muted, --line, --accent,
+   * --accent-hover, --success) worden hier bewust NIET gezet. Ze komen uit
+   * `garage.colors` in src/config/garage.ts en worden door src/lib/theme.ts
+   * als inline CSS-variabelen op <html> gezet. Pas de huisstijl daar aan,
+   * niet hier.
+   */
 
   --radius-none: 0;
   --radius-media: 0.5rem;
